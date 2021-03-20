@@ -1,0 +1,163 @@
+body{
+    background-color: #123456;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+}
+header{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 1px;
+}
+#navbar{
+    
+    text-align: center;
+   width: inherit;
+ 
+}
+#navbar ul{
+   list-style-type: none;
+}
+#navbar ul li{
+    display: inline;
+    padding: 25px;
+}
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.active,  #navbar ul li:hover{
+    background-color: #123456;
+    border-radius: 3px;
+    padding: 10px, 0;
+
+}
+ #navbar a:hover{
+    color: #fe12ff;
+    transition: 0.6s;
+}
+main{
+    background-color: #123456;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    width: 95%;
+    height: 620px;
+    margin: 0 auto;
+    text-align: center;
+     
+}
+#welcome-section{
+    margin-top: 20%;
+    font-size: 1.3em;
+    height: 650px;
+} 
+#welcome-section h1{
+    text-shadow: 1px 1.5px #000
+}
+#welcome-section a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #123456;
+    padding: 5px;
+    border-radius: 20px;
+}
+#welcome-section a:hover{
+    color: #fff;
+    background-color: #123456;
+    transition: 0.6s;
+}
+#projects{
+    width: 100%;
+    text-align: center;
+    background-image: url(./images/ab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#projects ul{
+    list-style-type: none;
+color: #fff;
+
+}
+#projects ul li{
+    display: inline-block;
+    width: 270px;
+    height: 250px;
+    padding: 10px 50px 50px 50px;
+    border: 1px solid aqua;
+    margin: 25px;
+    background-color: #123456;
+}
+#projects h2{
+    color: aqua;
+    line-height: 50px;
+   
+
+} 
+#topic{
+    text-transform: uppercase;
+    text-shadow: 1px 3px 2px #123456;
+    font-weight: 1000;
+}
+#projects a{
+    text-decoration: none;
+    background-color: aqua;
+    color: #123456;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    font-style: bold;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#projects a:hover{
+    background-color: #123456;
+    color: #fff;
+    transition: 1.08s;
+}
+@media(min-width: "400px"){
+    #projects{
+        color: #000;
+    }
+}
+#contacts{
+    width: 80%;
+    display: flex
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+#contacts ul{
+    list-style-type: none;
+}
+#contacts ul li{
+    display: inline;
+    padding: 30px;
+}
+#contacts a{
+    text-decoration: none;
+    color: rgb(80, 25, 151);
+}
+#fcc{
+    background-color: #fff;
+    justify-content:space-between ;
+    color: #123;
+    border-radius: 40px;
+    font-size: 1.3em;
+}
+.mycontacts{
+    display: none;
+}
+.dropdown ul li:hover .mycontacts
+{
+    display: block;
+    position: absolute;
+    background-color: #fe12ff;
+    margin-top: 15px;
+    margin-left: -15px;
+}
